@@ -13,6 +13,6 @@ function usageHistoryGroup(dateFrom, dateTo, sortColumn, descending, accountId, 
     if(accountId) searchParams.append("accountId", accountId);
 
     url += `?${searchParams.toString()}`;
-    core.setOutput("json",makeRequest("POST", url, body).then( response => response.json());
+    console.log(response.json());
     return makeRequest("POST", url, body).then( response => response.json());
 }
