@@ -14,5 +14,5 @@ function usageHistoryGroup(dateFrom, dateTo, sortColumn, descending, accountId, 
 
     url += `?${searchParams.toString()}`;
 
-    return makeRequest("POST", url, body).then( response => response.json());
+    return response.json();
 }
