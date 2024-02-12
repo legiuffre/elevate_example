@@ -1,20 +1,18 @@
+name: Output JavaScript Variable as JSON
+
 on:
   push:
     branches:
-      - 'master'
-    tags:
-      - '*.*.*'
-  pull_request:
-    branches:
-      - 'master'
-  page_build:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-     - name: 'Grab JSON Data'
-     - description: 'Pulls JSON data from API call'
-     - outputs:
-        json_data:
-          description: 'JSON Data'
-          required: true
-     - runs:
-        using: 'node16'
-        main: 'api\usage_history\usage-api.js'
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run JavaScript script
+        run: node /api/usage_history/usage-api.js
+
