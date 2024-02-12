@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - 'master'
+    tags:
+      - '*.*.*'
+  pull_request:
+    branches:
+      - 'master'
+  page_build:
+    steps:
+     - name: 'Grab JSON Data'
+     - description: 'Pulls JSON data from API call'
+     - outputs:
+        json_data:
+          description: 'JSON Data'
+          required: true
+     - runs:
+        using: 'node16'
+        main: 'index.js'
