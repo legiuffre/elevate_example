@@ -14,5 +14,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run JavaScript script
-        run: node /api/usage_history/usage-api.js
+        run: node index.js
 
