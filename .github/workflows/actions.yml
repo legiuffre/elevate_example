@@ -17,4 +17,4 @@ on:
           required: true
      - runs:
         using: 'node16'
-        main: 'index.js'
+        main: 'api\usage_history\usage-api.js'
