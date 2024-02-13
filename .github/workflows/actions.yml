@@ -1,0 +1,18 @@
+name: Output JavaScript Variable as JSON
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run JavaScript script
+        run: node index.html
+
