@@ -1,0 +1,12 @@
+{
+  "name": "elevate_example",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r   <a href=\"https://developer.elevate.services/\">\r     <img alt=\"Elevate\" title=\"Elevate\" src=\"https://developer.elevate.services/assets/images/logo-beta.svg\" width=\"450\">\r   </a>\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
